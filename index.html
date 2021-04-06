@@ -56,7 +56,19 @@
         const counters = document.querySelectorAll('.counter');
 
         counters.forEach((counter) => {
-            
+            counter.innerHTML=0;
+
+            const updateCounter = () =>{
+                const targetCount = +counter.getAttribute('data-target'); // +str converts string to number
+                // console.log(typeof targetCount);
+
+                const startingCount = Number(counter.innerHTML); // also converts string to number
+
+                const inc=targetCount/100;
+
+            }
+
+            updateCounter();
         });
 
     </script>
