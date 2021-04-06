@@ -66,6 +66,12 @@
 
                 const inc=targetCount/100;
 
+                if(startingCount < targetCount){
+                    counter.innerHTML=`${startingCount + inc}`;
+
+                    setTimeout(updateCounter , 10);
+                }
+
             }
 
             updateCounter();
